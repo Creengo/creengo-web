@@ -6,8 +6,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Creengo</title>
+    <meta name="description" content="Creengo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
@@ -16,76 +16,283 @@
     <!-- endbuild -->
   </head>
   <body>
-    <header>
-      <div class="contact-nav">
-        <div class="container">
-          <address class="pull-left">
-            <i class="fa fa-envelope fa-lg"></i> <a href="mailto:#">info@creengo.com</a> | 
-            <i class="fa fa-phone fa-lg"></i> +593 98 877-8551
-          </address>
-          <div class="social-networks pull-right">
-            <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+    <div id="page">
+      <header id="header" class="site-header">
+        <nav id="topbar" class="site-topbar visible-lg visible-md visible-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <address>
+                  <i class="fa fa-envelope fa-lg"></i> <a href="mailto:#">info@creengo.com</a> 
+                  <i class="fa fa-phone fa-lg"></i>  +593 98 877-8551
+                </address>
+              </div>
+              <div class="social-links col-sm-6">
+                <a href="http://facebook.com/creengo" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/creengo" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="http://linkedin.com/company/creengo" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <nav class="navbar navbar-default navbar-creengo navbar-lower" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Creengo</a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Servicios</a></li>
-              <li><a href="#about">Nosotros</a></li>
-              <li><a href="#about">Aliados</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-          <li>HTML5 Boilerplate</li>
-          <li>Bootstrap</li>
-          <li>Font Awesome <i class="fa fa-flag"></i></li>
-        </ul>
-        <p>installed.</p>
-        <h3>Enjoy coding! - Yeoman</h3>
-      </div>
+        <nav id="navbar" class="site-navbar navbar navbar-static-top affix-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand smooth-scroll" href="#page">Creengo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-right">
+                <li><a href="#features" class="current">Servicios</a></li>
+                <li><a href="#how">Nosotros</a></li>
+                <li><a href="#partners">Aliados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+
+        <section id="carousel-1" class="carousel slide section-slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active" style="background: url(images/banner1.jpg) no-repeat center;">
+              <div class="container"><img class="img-responsive center-block" src="images/typo-1.png" alt="First slide"></div>
+            </div>
+            <div class="item" style="background: url(images/banner2.jpg) no-repeat center;">
+              <div class="container"><img class="img-responsive center-block" src="images/typo-2.png" alt="First slide"></div>
+            </div>
+            <div class="item" style="background: url(images/banner3.jpg) no-repeat center;">
+              <div class="container"><img class="img-responsive center-block" src="images/typo-3.png" alt="First slide"></div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-1" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+          <a class="right carousel-control" href="#carousel-1" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+        </section>
+
+        <section id="features" class="section section-center section-cta loaded">
+          <div class="container">
+            <h2 class="section-title"><span>¿Qué hace Creengo?</span></h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            <div class="main-action row">
+              <div class="col-md-12"><a href="#contact" class="smooth-scroll btn btn-lg btn-creengo">Contáctenos</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="how" class="section section-center section-hilite section-features loaded">
+          <div class="container">
+            <h2 class="section-title"><span>How it works?</span></h2>
+            <div class="row">
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-line-chart fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-mobile fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-money fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-shopping-cart fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-laptop fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="icon-wrap"><i class="fa fa-truck fa-5x"></i></div>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="partners" class="section section-our-clients">
+          <div class="container">
+            <h2 class="section-title"><span>Nuestros Aliados</span></h2>
+            <div class="row">
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-paymentsoft.png" alt=""></a>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-factora.png" alt=""></a>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-banco-central.png" alt=""></a>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-servientrega.png" alt=""></a>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-aesoft.png" alt=""></a>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#"><img src="images/partner-spree.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="contact" class="section section-hilite section-center section-contact">
+          <div class="container">
+            <h2 class="section-title"><span>Contáctanos en cualquier momento</span></h2>
+            <div class="row">
+              <div class="col-md-6 text-left">
+                <p>¿Deseas más información? Llámanos o envíanos un email y te contactaremos tan pronto podamos.</p>
+                <address class="adr">
+                  <div class="phone"><i class="fa fa-phone"> llámanos</i> <span class="tel">+593 98 877-8551</span></div>
+                  <div class="address"><i class="fa fa-home"> oficina</i> Urdesa, Guayaquil, Ecuador</div>
+                  <div class="email"><i class="fa fa-envelope"> infomación</i> <a href="mailto:#">info@creengo.com</a></div>
+                </address>        
+              </div>
+              <div class="main-action col-md-6">
+                <form role="form">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="sr-only">Asunto</label>
+                        <input type="text" class="form-control" placeholder="Asunto">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only">Nombres</label>
+                        <input type="text" class="form-control" placeholder="Nombres">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="sr-only">Mensaje</label>
+                        <textarea class="form-control" placeholder="Mensaje" style="height: 100px" rows="6"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-creengo">Enviar mensaje</button>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <section class="section section-center section-gmap">
+          <iframe class="gmap" 
+            width="600" 
+            height="450" 
+            style="border:0" 
+            src="https://www.google.com/maps/embed/v1/place?q=-2.169632%2C%20-79.895081&amp;key=AIzaSyAgEclPXs0xKV0r8YOrnigC9JPU-erCbTk">
+          </iframe>
+        </section>
+      </main>
+
+      <footer id="footer" class="site-footer">
+        <div class="container">
+
+          <div id="sidebar-footer-1">
+            <div class="row">
+
+              <aside class="widget col-md-3 col-sm-6">
+                <h5 class="widget-title">Creengo</h5>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptate rerum voluptates.</p>
+              </aside>
+
+              <aside class="widget col-md-3 col-sm-6">
+                <h5 class="widget-title">Contacto</h5>
+                <div class="textwidget">
+                  <address class="adr">
+                    <div class="street-address"><i class="fa fa-home"></i> Urdesa</div>
+                    <span class="locality">Guayaquil</span>,
+                    <span class="country-name">Ecuador</span>
+                    <div class="email"><i class="fa fa-envelope"></i> <a href="mailto:#">info@creengo.com</a></div>
+                    <div class="phone"><i class="fa fa-phone"></i> <span class="tel">+593 98 877-8551</span></div>
+                  </address>
+                  
+                </div>
+              </aside>
+
+              <aside class="widget col-md-3 col-sm-6">
+                <ul>
+                  <li><a href="#">Términos de uso</a></li>
+                  <li><a href="#">Política de Privacidad</a></li>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+              </aside>
+
+              <aside class="widget col-md-3 col-sm-6">
+                <h5 class="widget-title">Subscríbete a las noticias</h5>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Tú Email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button"><i class="fa fa-arrow-right"></i></button>
+                  </span>
+                </div>
+                <ul class="social-links">
+                  <li><a href="http://facebook.com/creengo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="http://twitter.com/creengo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="http://linkedin.com/company/creengo" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <div class="stickers">
+                  <a href="http://validator.w3.org/check?uri=creengo.com" target="_blank">
+                    <img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_32.png" alt="">
+                  </a>
+                </div>
+              </aside>
+
+            </div>
+          </div>
+
+          <div class="copyright"><p>© 2014 Creengo S.A.</p>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+
+    <div class="scroll-to-top" data-spy="affix" data-offset-top="500">
+      <a href="#page" class="smooth-scroll"><i class="fa fa-arrow-up"></i></a>
     </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-35201432-1');ga('send','pageview');
     </script>
 
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="scripts/main.js"></script>
-        <script src="scripts/hello.js"></script>
+        <script src="scripts/jquery.singlePageNav.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/vendor/bootstrap.js -->
