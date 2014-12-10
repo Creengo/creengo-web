@@ -1,2 +1,0 @@
-### jshint white:false ###
-
